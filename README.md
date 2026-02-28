@@ -1,124 +1,73 @@
 **Electric Cycle Demand Analysis – Yulu**
-**Project Overview**
+Overview
 
-This project analyzes rental demand patterns for Yulu, a shared electric micro-mobility service provider.
+This project analyzes rental demand patterns for a shared electric micro-mobility service provider (company_e).
 
-The objective was to identify the key factors influencing electric cycle rentals using statistical analysis and visualization. The insights help improve fleet planning, demand forecasting, and business strategy.
+The goal was to identify key factors influencing cycle rentals and generate actionable business insights using statistical analysis.
 
-**Problem Statement**
+Problem
 
-Yulu has observed fluctuations in rental demand and wants to understand:
+Rental demand fluctuates across time and conditions.
+This study investigates whether demand is affected by:
 
-Does working day status affect rentals?
+Working vs non-working days
 
-Do seasons influence demand?
+Seasonal variation
 
-Does weather impact usage?
+Weather conditions
 
-Are weather and season related?
+The relationship between weather and season
 
-The goal is to provide data-driven insights to support operational and strategic decisions.
+Approach
 
-**Dataset Information**
+Data cleaning and preprocessing
 
-The dataset contains 10,886 records with 12 variables including:
+Exploratory Data Analysis (EDA)
 
-season
+Statistical hypothesis testing:
 
-holiday
+Two-Sample T-Test
 
-workingday
+ANOVA
 
-weather
+Chi-Square Test
 
-temp
+Tools used: Python, Pandas, NumPy, Seaborn, Matplotlib, SciPy
 
-atemp
+Key Findings
 
-humidity
+Weather and season significantly impact rental demand.
 
-windspeed
+Clear skies and moderate temperatures (15–30°C) show highest usage.
 
-casual
-
-registered
-
-count (Target variable)
-
-**Methodology**
-1️.) Data Preparation
-
-Imported CSV data using Pandas
-
-Checked data types & converted categorical variables
-
-Verified missing values
-
-Generated statistical summary
-
-2️.) Exploratory Data Analysis (EDA)
-
-Univariate Analysis → Histograms & Countplots
-
-Bivariate Analysis → Boxplots (count vs season, weather, workingday)
-
-3️.) Hypothesis Testing
-
-Two-Sample T-Test → Working vs Non-Working Day
-
-ANOVA → Season vs Count, Weather vs Count
-
-Chi-Square Test → Weather vs Season
-
-4️.) Tools Used
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-SciPy
-
-**Key Insights**
-
-Weather significantly impacts rental demand.
-
-Seasonal variation affects usage patterns.
-
-Clear and comfortable temperatures (~15–30°C) show highest rentals.
-
-High humidity and wind reduce usage.
-
-Registered users drive the majority of demand.
+Registered users drive the majority of rentals.
 
 No significant difference between weekday and weekend usage.
 
-**Business Recommendations**
+Weather and season are statistically dependent.
 
-Increase fleet availability during high-demand seasons.
+Business Impact
 
-Use dynamic pricing based on weather conditions.
+Supports demand forecasting and fleet optimization
 
-Strengthen subscription plans to retain registered users.
+Enables weather-based operational planning
 
-Promote weekend leisure rides to grow casual segment.
+Identifies opportunity to grow weekend & casual segments
 
-Use weather-based demand forecasting for smarter operations.
+Strengthens data-driven decision making
 
-**Limitations**
+Limitations
 
-No demographic or ride-duration data included.
+No demographic or trip-purpose data included
 
-Broad weather categories limit granular analysis.
+Weather categories are broad
 
-Assumptions of statistical tests may not fully hold due to skewed distributions.
+Statistical tests assume normality
 
-Future improvements could include predictive modeling and machine learning for demand forecasting.
+Takeaway
+
+Electric cycle demand is influenced more by environmental comfort than calendar type.
+Optimizing operations around seasonal and weather trends can improve utilization and revenue.
 
 **Final Takeaway**
 
