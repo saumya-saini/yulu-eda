@@ -1,76 +1,69 @@
-**Electric Cycle Demand Analysis – Yulu**
-Overview
+# Yulu Bike - Demand Analysis
 
-This project analyzes rental demand patterns for a shared electric micro-mobility service provider (company_e).
+## Overview
 
-The goal was to identify key factors influencing cycle rentals and generate actionable business insights using statistical analysis.
+Analyzed Yulu bike-sharing data to understand factors affecting demand, identify key drivers of rentals, and generate actionable business insights using statistical analysis and hypothesis testing.
 
-Problem
 
-Rental demand fluctuates across time and conditions.
-This study investigates whether demand is affected by:
+## Dataset
 
-Working vs non-working days
+The dataset includes variables such as:
 
-Seasonal variation
+* Datetime (date & time of rental)
+* Season, Weather
+* Holiday, Working Day
+* Temperature, Feels-like Temperature
+* Humidity, Windspeed
+* Casual, Registered, Count (total rentals)
 
-Weather conditions
 
-The relationship between weather and season
+## Objective
 
-Approach
+* Understand factors influencing bike rental demand
+* Analyze impact of weather, season, and working days
+* Perform statistical hypothesis testing
+* Derive business insights for demand optimization
 
-Data cleaning and preprocessing
 
-Exploratory Data Analysis (EDA)
+## Key Analysis
 
-Statistical hypothesis testing:
+* Exploratory Data Analysis (EDA)
+* Univariate & Bivariate Analysis
+* Correlation Analysis (Heatmap)
+* Hypothesis Testing:
+* T-Test (Working Day vs Demand)
+* ANOVA (Season & Weather vs Demand)
+* Chi-Square Test (Weather vs Season)
+* Assumption Testing (Shapiro-Wilk, Levene’s Test)
 
-Two-Sample T-Test
 
-ANOVA
+## Key Insights
 
-Chi-Square Test
+* Weather and season significantly impact bike rentals, with higher demand during favorable conditions.
+* Working day does not have a significant effect, indicating usage beyond commuting purposes.
+* Temperature positively influences demand up to an optimal range.
+* Humidity negatively impacts rentals, reducing user comfort.
+* Windspeed shows minimal effect on demand.
+* Strong dependency observed between weather and season.
 
-Tools used: Python, Pandas, NumPy, Seaborn, Matplotlib, SciPy
 
-Key Findings
+## Customer Behavior Insights
 
-Weather and season significantly impact rental demand.
+* Users prefer riding in comfortable weather conditions.
+* Demand peaks during moderate temperatures and clear weather.
+* Bike usage is influenced by lifestyle and convenience, not just work commute.
 
-Clear skies and moderate temperatures (15–30°C) show highest usage.
 
-Registered users drive the majority of rentals.
+## Tools Used
 
-No significant difference between weekday and weekend usage.
+* Python (Pandas, NumPy, SciPy)
+* Matplotlib, Seaborn
+* Statistical Testing Methods
 
-Weather and season are statistically dependent.
 
-Business Impact
+## Business Impact
 
-Supports demand forecasting and fleet optimization
-
-Enables weather-based operational planning
-
-Identifies opportunity to grow weekend & casual segments
-
-Strengthens data-driven decision making
-
-Limitations
-
-No demographic or trip-purpose data included
-
-Weather categories are broad
-
-Statistical tests assume normality
-
-Takeaway
-
-Electric cycle demand is influenced more by environmental comfort than calendar type.
-Optimizing operations around seasonal and weather trends can improve utilization and revenue.
-
-**Final Takeaway**
-
-Electric cycle demand is strongly influenced by environmental comfort rather than calendar type.
-
-By aligning operations with seasonal and weather patterns, micro-mobility companies can improve utilization, reduce costs, and enhance rider satisfaction.
+* Enables data-driven demand forecasting
+* Supports dynamic bike allocation strategies
+* Helps design weather-based pricing models
+* Improves operational efficiency and user experience with seasonal and weather patterns, micro-mobility companies can improve utilization, reduce costs, and enhance rider satisfaction.
