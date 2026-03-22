@@ -66,7 +66,7 @@ Working day was found to have no statistically significant effect on demand.
 * Temperature and humidity contribute to understanding user behavior.
 * Windspeed and working day have limited influence.
 
-- While the analysis provides strong insights into demand drivers, further modeling (e.g., regression) can quantify the exact contribution of each variable.
+While the analysis provides strong insights into demand drivers, further modeling (e.g., regression) can quantify the exact contribution of each variable.
 
 
 ## Customer Behavior Insights
