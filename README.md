@@ -47,6 +47,30 @@ The dataset includes variables such as:
 * Strong dependency observed between weather and season.
 
 
+## Model Interpretation (Business Understanding)
+
+### Significant Variables
+
+The analysis identified the following key variables influencing bike rental demand:
+
+* Weather and season (strong impact)
+* Temperature (positive relationship)
+* Humidity (negative relationship)
+
+Working day was found to have no statistically significant effect on demand.
+
+
+### Explanation Power
+
+The selected variables describe demand patterns effectively:
+
+* Weather and season show strong variation in rentals.
+* Temperature and humidity contribute to understanding user behavior.
+* Windspeed and working day have limited influence.
+
+While the analysis provides strong insights into demand drivers, further modeling (e.g., regression) can quantify the exact contribution of each variable.
+
+
 ## Customer Behavior Insights
 
 * Users prefer riding in comfortable weather conditions.
