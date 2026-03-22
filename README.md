@@ -51,7 +51,7 @@ The dataset includes variables such as:
 
 ### Significant Variables
 
-The analysis identified the following key variables influencing bike rental demand:
+- The analysis identified the following key variables influencing bike rental demand:
 
 * Weather and season (strong impact)
 * Temperature (positive relationship)
@@ -60,9 +60,7 @@ The analysis identified the following key variables influencing bike rental dema
 Working day was found to have no statistically significant effect on demand.
 
 
-### Explanation Power
-
-The selected variables describe demand patterns effectively:
+- The selected variables describe demand patterns effectively:
 
 * Weather and season show strong variation in rentals.
 * Temperature and humidity contribute to understanding user behavior.
